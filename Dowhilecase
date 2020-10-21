@@ -1,0 +1,24 @@
+/*
+
+while과 do_while : do_while은 적어도 한번은 실행한다.(중요중요) => 이후에 판단.
+while은 앞에 조건이 붙고, do_while은 조건이 끝에 붙는다.
+
+*/
+class Main {
+
+  public static void show(int n){
+    int temp = n;
+    do {
+      if (n % 2 == 1) {
+        temp = temp*3 +1;
+      }else {
+        temp /= 2;
+      }
+      System.out.print("[" + temp + "] ");
+    } while (temp > 1);
+  }
+
+  public static void main(String[] args) {
+    show(122);
+  }
+}
