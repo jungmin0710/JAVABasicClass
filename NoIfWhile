@@ -1,0 +1,40 @@
+//서로 다른 세 정수를 만들자
+//Math.random 사용
+//if를 쓰지 않고
+
+//방법 1
+class Main {
+  public static void main(String[] args) {
+    int range = 10;
+    int start = 1;
+    int a = 0, b = 0, c = 0;
+
+    do {
+      a = (int)(range*Math.random()+start);
+      b = (int)(range*Math.random()+start);
+      c = (int)(range*Math.random()+start);
+      
+    } while (a == b || b == c || c == a);
+
+    System.out.printf("%d\t%d\t%d",a,b,c);
+  }
+}
+
+
+
+//방법 2
+class Main {
+  public static void main(String[] args) {
+    int range = 10;
+    int start = 1;
+    int a = 0, b = 0, c = 0;
+
+    while (a == b || b == c || c == a) {
+      a = (int)(range*Math.random()+start);
+      b = (int)(range*Math.random()+start);
+      c = (int)(range*Math.random()+start);
+      }
+
+    System.out.printf("%d\t%d\t%d",a,b,c);
+  }
+}
