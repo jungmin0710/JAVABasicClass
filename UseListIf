@@ -1,0 +1,24 @@
+//배열보다 편리하고 강력한 list에 정수를 저장하고 저장한 정수들 중에서 홀수만 찾아서 제곱의 합을 구해보자
+//List<> : <>에는 변수선언시 int말고 Integer를 사용해야 한다.(중요)
+import java.util.ArrayList;
+import java.util.List;
+
+
+class Main {
+  public static void main(String[] args) {
+    List<Integer> ilist = new ArrayList<>();
+
+    int s = 0;
+
+    for (int i = 1; i <= 10; i++){
+      ilist.add(i);
+    }
+
+    for (int m:ilist) {
+      if (m % 2 == 1) {
+        s = s+ (m*m);
+      }
+    }
+    System.out.printf("1부터 10까지 홀수의 제곱합은 %d입니다.",s);
+  }
+}
