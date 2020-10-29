@@ -27,7 +27,7 @@ class Main {
     for (int i = 0; i < n; i++){
       for (int j = 0; j < n; j++){
         arr[i][j] = (i+1)*(j+1);
-        System.out.printf("%3d",arr[i][j]);
+        System.out.printf("%3d",arr[i][j]);// 따옴표 안의 숫자는 배열의 값 길이가 길어질 때 조정할 것(라인맞추기)
       }
       System.out.println();
     }
